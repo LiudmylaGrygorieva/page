@@ -11,33 +11,38 @@
     <header>
         <div class="header">
             <div class="wrap">
-            <ul>
-                <li class="menu_list"><a href="#">Оплата</a></li>
-                   <ul>
+            <ul class="menu_one">
+                <li class="menu_top"><a href="#">Оплата</a>
+                   <ul class="s_menu">
                       <li><a href="#">Подпункт 1</a></li>
                       <li><a href="#">Подпункт2</a></li>            
                     </ul> 
-                <li class="menu_list"><a href="#">Сертификаты</a></li>
-                   <ul>
+                </li>
+                <li class="menu_top"><a href="#">Сертификаты</a>
+                   <ul class="s_menu">
                     <li><a href="#">Подпункт 1</a></li>
                     <li><a href="#">Подпункт2</a></li>            
                    </ul> 
-                <li class="menu_list"><a href="#">Закладки</a></li>
-                   <ul>
+                </li>
+                <li class="menu_top"><a href="#">Закладки</a>
+                   <ul class="s_menu">
                     <li><a href="#">Подпункт 1</a></li>
                     <li><a href="#">Подпункт2</a></li>            
                    </ul> 
-               <li class="menu_list"><a href="#">Личный кабинет</a>
-                   <ul>
+                </li>
+               <li class="menu_top"><a href="#">Личный кабинет</a>
+                   <ul class="s_menu">
                     <li><a href="#">Подпункт 1</a></li>
                     <li><a href="#">Подпункт2</a></li>            
                    </ul> 
             </li>                    
             </ul> 
-            </div>   
+            <a href="#" class="contact"><button class="kontact">Контакт</button></a>
+            </div> 
+        </div>      
             <div class="search-box">
                 <form>
-                  <input type="text" placeholder="Поиск.." name="search">
+                  <input type="text" placeholder="Поиск" name="search">
                     <select name="select">
                        <option>Производитель</option>
                        <option>Bosch</option>
@@ -51,78 +56,108 @@
                        <option>Stalker</option>
                        <option>Stanley</option>
                     </select>
-                  <button type="submit">Поиск</button>
+                  <button type="submit" class="search">Поиск</button>
                 </form>
             </div>
         </div>
     </header>
 
     <div class="container">
+
     <div class="sidebar">
-        <ul>
-            <li><a href="#">Главная</a></li>
-                <ul>
+        <ul class="menu">
+            <li class="menu_list"><a href="#">Главная</a>
+                <ul class="sub_menu">
                     <li><a href="#">Подпункт 1</a></li>
                     <li><a href="#">Подпункт2</a></li>            
-                 </ul>  
-            <li><a href="#">Каталог</a></li>
-                <ul>
-                    <li><a href="#">Цветы</a></li>
-                    <li><a href="#">Горшки</a></li> 
-                        <ul>
+                </ul>  
+            </li>
+            <li class="menu_list"><a href="#">Каталог</a>
+                <ul class="sub_menu">
+                    <li class="menu_s"><a href="#">Горшки</a>                            
+                        <ul class="menu_drop">
                             <li><a href="#">Глиняные</a></li>
                             <li><a href="#">Пластиковые</a></li> 
-                             <li><a href="#">Керамические</a></li>            
-                         </ul> 
-                    <li><a href="#">Земля</a></li>            
-                </ul> 
-            <li><a href="#">Сервис</a></li>
-                <ul>
+                            <li><a href="#">Керамические</a></li>            
+                        </ul>
+                    </li>
+                    <li><a href="#">Цветы</a></li>
+                    <li><a href="#">Земля</a></li> 
+                </ul>        
+            </li>   
+            <li class="menu_list"><a href="#">Сервис</a>
+                <ul class="sub_menu">
                     <li><a href="#">Подпункт 1</a></li>
                     <li><a href="#">Подпункт2</a></li>            
                 </ul> 
-            <li><a href="#">Блог</a></li>
-               <ul>
+            <li class="menu_list"><a href="#">Блог</a>
+               <ul class="sub_menu">
                     <li><a href="#">Подпункт 1</a></li>
                     <li><a href="#">Подпункт2</a></li>            
                 </ul> 
+            </li>
             <li><a href="#">Контакты</a></li>
         </ul>
+    </div>
 
-    </div class="desc">
+
+
+    <div class="desc">
         <h1>Металлоискатели</h1>
         <div class="wrapper">
-            <div class="text uno">
-                <img src="img/i1.jpg" alt="Металлоискатель Minelab X-Terra 705">
-                <p>Металлоискатель Minelab X-Terra 705<br><b>28 990 руб.</b></p>
-                <input type="button" class="button" value="   Подробнее   "> 
-                <div class="spryte"></div>
-            </div>      
-
-            <div class="text dos">
-                <img src="img/i2.jpg" alt="Металлоискатель Garrett AT Gold">
-                <p>Металлоискатель Garrett AT Gold<br><b>39 650 руб.</b><sup><s>47600 руб</s></sup></p>
-                <input type="button" class="button" value="   Подробнее   ">
-                <div class="spryte"></div>
-            </div>
-
-            <div class="text tres">
-                <img src="img/i3.jpg" alt="Mеталлоискатель Garrett Ace 250">
-                <p>Металлоискатель Garrett Ace 250<br><b>17 650 руб.</b></p>
-                <input type="button" class="button" value="   Подробнее   "> 
-                <div class="spryte"></div>
-            </div>
-
-            <div class="text cuatro">
-                <img src="img/i4.jpg" alt="Металлоискатель Treker GC-1039">  
-                <p>Металлоискатель Treker GC-1039<br><b>7 280 руб.</b></p>  
-                <input type="button" class="button" value="   Подробнее   "> 
-                <div class="spryte"></div>
+            <div class="maket">
+                <div class="img">
+                    <img src="img/i1.jpg" alt="Металлоискатель Minelab X-Terra 705">
+                </div>
+                <div class="text">
+                    <p>Металлоискатель Minelab X-Terra 705<br><b>28 990 руб.</b></p>
+                    <input type="button" class="button" value="   Подробнее   "> 
+                    <div class="spryte"></div>
+                    <span class="basket">Добавить в корзину</span>
+                </div>
             </div>    
-        </div>   
-    </div>
-    </div>
 
+            <div class="maket">
+                <div class="img">
+                    <img src="img/i2.jpg" alt="Металлоискатель Garrett AT Gold">
+                    <div class="velexecutive">
+                        <div class="particularis">АКЦИЯ</div>
+                    </div>
+                </div>
+                <div class="text">
+                    <p>Металлоискатель Garrett AT Gold<br><b>39 650 руб.</b><sup><s>47600 руб</s></sup></p>
+                    <input type="button" class="button" value="   Подробнее   ">
+                    <div class="spryte"></div>
+                    <span class="basket">Добавить в корзину</span>
+                </div>
+            </div>
+
+            <div class="maket">
+                <div class="img">
+                    <img src="img/i3.jpg" alt="Металлоискатель Garrett Ace 250">            
+                </div> 
+                <div class="text">
+
+                    <p>Металлоискатель Garrett Ace 250<br><b>17 650 руб.</b></p>
+                    <input type="button" class="button" value="   Подробнее   "> 
+                    <div class="spryte"></div>
+                    <span class="basket">Добавить в корзину</span>
+                </div>
+            </div>
+            <div class="maket">
+                <div class="img">
+                     <img src="img/i4.jpg" alt="Металлоискатель Treker GC-1039">
+                </div>
+                <div class="text">
+                    <p>Металлоискатель Treker GC-1039<br><b>7 280 руб.</b></p>  
+                    <input type="button" class="button" value="   Подробнее   "> 
+                    <div class="spryte"></div>
+                    <span class="basket">Добавить в корзину</span>
+                </div>
+            </div>   
+        </div>
+    </div>
+    </div>
 
 <footer>
     <div class="active">
@@ -131,12 +166,8 @@
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Сертификаты</a></li>
         </ul>    
-    <p>&copy;Copyright 2018. <br> All Rights Reserved </p>
+    <p>&copy;Copyright 2020. <br> All Rights Reserved </p>
     </div>
 </footer>
-            
-
-      
-
 </body>
 </html>
