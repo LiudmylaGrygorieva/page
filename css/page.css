@@ -19,7 +19,7 @@
 
 .wrap {
      display: inline-block;
-     width: 900px;
+     min-width: 900px;
 }
 
 .menu_one .s_menu { 
@@ -76,10 +76,17 @@
     cursor: pointer;
     transition: all .3s ease 0s;
 }
-.kontact:hover {
+
+.menu_one .kontact a:hover {  
+    border-radius: 50px;
     background: linear-gradient(to right, #F6EFD2, #CEAD78);
     box-shadow: 2px 2px 5px #5F9CAE;
- }
+}
+
+/*.kontact:hover {
+    background: linear-gradient(to right, #F6EFD2, #CEAD78);
+    box-shadow: 2px 2px 5px #5F9CAE;
+ }*/
 
 .menu_top .kontact:hover {
     background-color: #008B8B;
@@ -200,6 +207,16 @@
     top: 12px;
 }
 
+.menu .menu_list a {
+    background-color: #000033;
+}
+.menu .menu_list a:hover, a:active {
+    background-color: #000066;
+}
+
+.menu .menu_drop li a:hover {
+    background-color: #1a1aff;
+}
 
 .desc {
     width: 80% ;
@@ -218,9 +235,9 @@
 .maket {
     display: block;  
     margin: 80px;
+    box-sizing: border-box;
     transition: 1s;
 }
-
 
 .maket:hover{
     border: 1px solid grey;
@@ -298,30 +315,28 @@
     position: absolute;
     width: 150px;
     height: 20px;
-    background: #edf2f2;
+    background: #85898a;
     border-radius: 4px;
-    border: 1px solid gray;
-    transition: .5s visibility 0s;
 }
 
 .basket:after {
 	content: '';
 	position: absolute;
 	bottom: 0;
-	left: 50%;
+	left: 10%;
 	width: 0;
 	height: 0;
-	border: 43px solid transparent;
-	border-top-color: #eff5f6;
+	border: 9px solid transparent;
+	border-top-color: #85898a;
 	border-bottom: 0;
 	border-left: 0;
-	margin-left: -21.5px;
-	margin-bottom: -43px;
+	margin-left: -4.5px;
+	margin-bottom: -9px;
 }
 
 .spryte:hover .basket {
     visibility: visible;
-    top:  -25px ;
+    top:  -30px ;
     right: -130px;
 }
 
